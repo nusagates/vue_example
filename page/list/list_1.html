@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+</head>
+<body>
+<div class="container py-5" id="app">
+    <ul class="list-group">
+        <li class="list-group-item" v-for="n in 10">{{ 'List '+n}}</li>
+    </ul>
+</div>
+<script src="../../js/vue.js"></script>
+<script>
+    new Vue({
+        el: "#app"
+    })
+</script>
+</body>
+</html>
